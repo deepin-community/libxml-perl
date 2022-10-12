@@ -1,0 +1,24 @@
+Source: libxml-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 11)
+Build-Depends-Indep: perl,
+                     libxml-parser-perl
+Standards-Version: 4.1.5
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libxml-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libxml-perl.git
+Homepage: https://metacpan.org/release/libxml-perl
+
+Package: libxml-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libxml-parser-perl
+Description: Perl modules for working with XML
+ libxml-perl is a collection of smaller Perl modules, scripts, and
+ documents for working with XML in Perl.  libxml-perl software
+ works in combination with XML::Parser, PerlSAX, XML::DOM,
+ XML::Grove and others.
